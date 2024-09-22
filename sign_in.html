@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Tú Hương</title>
+    <link rel="stylesheet" href="sign_in.css" />
+  </head>
+  <body>
+    <div class="left">
+      <div class="feliz">Happy birthday</div>
+        <div class="ano_novo">
+          <span>2</span>
+          <span class="seis">6</span>
+          <span class="sete">7</span>
+          <div class="balao"></div>
+        </div>
+        <div class="fogos">
+          <div class="f1">
+            <span><i></i></span>
+            <span><i></i></span>
+            <span><i></i></span>
+          </div>
+          <div class="f2">
+            <span><i></i></span>
+            <span><i></i></span>
+            <span><i></i></span>
+          </div>
+          <div class="f3">
+            <span><i></i></span>
+            <span><i></i></span>
+            <span><i></i></span>
+          </div>
+          <div class="f4">
+            <span><i></i></span>
+            <span><i></i></span>
+            <span><i></i></span>
+          </div>
+        </div>
+      <div class="container1">
+        <div class="cloud1"></div>
+      </div>
+      <div class="container2">
+        <div class="cloud2"></div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="sign-in">
+        <h1>Login</h1>
+        <label for="">Password</label>
+        <input type="text" id="passwordInput">
+        <button type="submit" id="signInButton">Sign in</button>
+      </div>
+    </div>
+    
+    <script>
+      document.getElementById('signInButton').addEventListener('click', function() {
+        const inputValue = document.getElementById('passwordInput').value;
+    
+        // Kiểm tra giá trị input
+        if (inputValue === 'TuHuongsinhnhatvuive') {
+          // Chuyển hướng nếu đúng
+          window.location.href = 'home.html';
+        } else {
+          alert('Password is incorrect!');
+        }
+      });
+    </script>
+    
+    
+    <script src="script.js"></script>
+  </body>
+</html>
